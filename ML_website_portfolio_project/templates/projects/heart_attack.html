@@ -1,0 +1,54 @@
+{% extends 'layout.html'%}
+
+{%block content%}
+
+<div class="container">
+  <h2 class="text-center mt-3" >Bike Sharing price estimator</h2>
+
+  <form action="/heart_attack" method="POST">
+
+    <div class="form-group"></di>
+      <label for="sex">Select Sex</label>
+      <select class="form-select custom-select" name="sex" id="sex">
+        <option value="1">Male</option>
+        <option value="0">Female</option>
+      </select>
+    </div>
+
+    <div class="mb-3">
+      <label for="thalach" class="form-label">Maximum heart rate achieved</label>
+      <input type="text" class="form-control" id="thalach" name="thalach" placeholder="Enter maximum heart rate achieved">
+    </div>
+    
+    <div class="mb-3">
+      <label for="oldpeak" class="form-label">Previously achieved maximum heart rate</label>
+      <input type="text" class="form-control" id="oldpeak" name="oldpeak" placeholder="Enter previously achieved maximum heart rate">
+    </div>
+
+    
+    <div class="form-group">
+      <label for="exang">Select if it is exercise induced angina</label>
+      <select class="form-select custom-select" name="exang" id="exang">
+        <option value="1">Yes</option>
+        <option value="0">No</option>
+      </select>
+    </div>
+
+    <div class="form-group"></di>
+      <label for="ca">Select number of major vaulves</label>
+      <select class="form-select custom-select" name="ca" id="ca">
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+      </select>
+    </div>
+
+    
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+
+</div>
+
+{%endblock content%}

@@ -1,0 +1,85 @@
+{% extends 'layout.html'%}
+
+{%block content%}
+
+<div class="container">
+  <h2 class="text-center mt-3" >Bike Sharing price estimator</h2>
+
+  <form action="/bike_sharing" method="POST">
+
+    <div class="form-group"></di>
+      <label for="year">Select Year</label>
+      <select class="form-select custom-select" name="year" id="year">
+        <!-- <option selected>Open this select menu</option> -->
+        <option value="1">2019</option>
+        <option value="0">2018</option>
+      </select>
+    </div>
+
+    <div class="mb-3">
+      <label for="temperature" class="form-label">Temperature</label>
+      <input type="text" class="form-control" id="temperature" name="temperature" placeholder="Enter Temperature">
+    </div>
+    
+    <div class="mb-3">
+      <label for="windspeed" class="form-label">Windspeed</label>
+      <input type="text" class="form-control" id="windspeed" name="windspeed" placeholder="Enter Windspeed">
+    </div>
+
+    
+    <div class="form-group">
+      <label for="Sep">Select Month</label>
+      <select class="form-select custom-select" name="Sep" id="Sep">
+        <!-- <option selected>Open this select menu</option> -->
+        <option value="1">September</option>
+        <option value="0">Other</option>
+      </select>
+    </div>
+
+    <div class="form-group"></di>
+      <label for="Sun">Select WeekDay</label>
+      <select class="form-select custom-select" name="Sun" id="Sun">
+        <!-- <option selected>Open this select menu</option> -->
+        <option value="1">Sunday</option>
+        <option value="0">Other</option>
+      </select>
+    </div>
+
+    <div class="form-group"></di>
+      <label for="Season">Select Season</label>
+      <select class="form-select custom-select" name="Season" id="Season">
+        <!-- <option selected>Open this select menu</option> -->
+        <option value="1">Spring</option>
+        <option value="2">Summer</option>
+        <option value="3">Winter</option>
+        <option value="4">Fall</option>
+      </select>
+    </div>
+
+    <div class="form-group"></di>
+      <label for="Weather">Select Weather</label>
+      <select class="form-select custom-select" name="Weather" id="Weather">
+        <!-- <option selected>Open this select menu</option> -->
+        <option value="1">Cloudy</option>
+        <option value="2">Light Precipitation</option>
+        <option value="3">Other</option>
+      </select>
+    </div>
+
+    <div class="form-group"></di>
+      <label for="Day">Day</label>
+      <select class="form-select custom-select" name="Day" id="Day">
+        <!-- <option selected>Open this select menu</option> -->
+        <option value="1">Holiday</option>
+        <option value="0">Working Day</option>
+      </select>
+    </div>
+
+    <!-- # ['2019', 'temp', 'windspeed', 'Sep', 'Sun', 'Spring', 'Summer', 'Winter', 'Cloudy', 'Light precipitation', 'holiday'] -->
+    
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+
+</div>
+
+{%endblock content%}
